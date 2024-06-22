@@ -1,0 +1,31 @@
+﻿@model MusicStoreAPI.Models.CMS.MusicStoreAddress
+
+<div class="col-md-4 col-sm-6 col-xs-12 col-footer">
+    <div class=" box-footer block  box-contact">
+
+        <div class="about__footer block">
+
+            <h4 class="title_block">
+                @Model.Name
+            </h4>
+
+
+            <div class="des_about">
+                @Model.Descriptions
+            </div>
+
+            <ul class="list-group list-unstyled list-contact">
+
+                <li><i class="fa fa-map-marker"></i>  @Model.Address @Model.Address2</li>
+
+
+                <li><i class="fa fa-phone"></i>  @Model.PhoneNumer</li>
+
+
+                <li><i class="fa fa-envelope-o"></i>     @Model.EmailAdres</li>
+
+            </ul>
+        </div>
+
+    </div>
+</div>

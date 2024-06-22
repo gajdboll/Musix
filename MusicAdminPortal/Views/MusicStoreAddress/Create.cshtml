@@ -1,0 +1,78 @@
+﻿@model MusicStoreAPI.Models.CMS.MusicStoreAddress
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+
+<div class="container-fluid pt-4 px-4">
+    <div class="row g-4">
+
+        <div class="col-sm-12 ">
+            <div class="bg-secondary rounded h-100 p-4">
+                <h6 class="mb-4 text-center" style="font-size: larger;">Create Music Store Address</h6>
+                <form asp-action="Create">
+                    <label asp-for="Name" class="mb-4">Enter Store Welcome Header</label>
+                    <div class="form-floating mb-3">
+                        <input asp-for="Name" class="form-control" id="floatingInput" placeholder="">
+                        <span asp-validation-for="Name" class="text-danger"></span>
+                    </div>
+                    <label asp-for="Descriptions">Enter Music Store Motto</label><br>
+                    <div class="form-floating">
+                        <textarea asp-for="Descriptions" class="form-control" style="height: 300px;" placeholder=""></textarea>
+                        <span asp-validation-for="Descriptions" class="text-danger"></span>
+                    </div><br>
+
+                    <label asp-for="Address">Enter Store Address</label><br>
+                    <div class="form-floating">
+                        <textarea asp-for="Address" class="form-control" style="height: 150px;" placeholder=""></textarea>
+                        <span asp-validation-for="Address" class="text-danger"></span>
+                    </div><br>
+                    <label asp-for="Address2">Enter Store Address prt 2</label><br>
+                    <div class="form-floating">
+                        <textarea asp-for="Address2" class="form-control" style="height: 150px;" placeholder=""></textarea>
+                        <span asp-validation-for="Address2" class="text-danger"></span>
+                    </div><br>
+                    <label asp-for="PhoneNumer">Enter Mobile</label><br>
+
+                     <div class="form-floating">
+                        <input asp-for="PhoneNumer" class="form-control" id="numberInput" placeholder="Enter Mobile" type="tel" pattern="[0-9]{1,9}" required>
+                        <span asp-validation-for="PhoneNumer" class="text-danger"></span>
+                    </div><br>
+
+                    <label asp-for="EmailAdres">Enter Email</label><br>
+
+                    <div class="form-floating">
+                        <input asp-for="EmailAdres" class="form-control" id="numberInput" placeholder="Enter Email" type="email" required>
+                        <span asp-validation-for="EmailAdres" class="text-danger"></span>
+                    </div><br>
+
+                    <div class="form-check form-switch">
+                        <input asp-for="isActive" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked" checked="">
+                        <label asp-for="isActive" class="form-check-label" for="flexSwitchCheckChecked">
+                            Should that be visible to the user?
+                        </label><br>
+                        <span asp-validation-for="isActive" class="text-danger"></span>
+
+                    </div><br>
+                    <label asp-for="Position">Enter Position</label><br>
+                    <div class="form-floating">
+                        <input asp-for="Position" class="form-control" id="numberInput" >
+                        <span asp-validation-for="Position" class="text-danger"></span>
+                    </div><br>
+                    <div class="form-group">
+                        <input type="submit" value="Create" class="btn btn-outline-success m-2" />
+                        <a asp-action="Index" class="btn btn-outline-info m-2">Back to List</a>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
+ 

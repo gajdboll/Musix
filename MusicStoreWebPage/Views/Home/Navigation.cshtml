@@ -1,0 +1,1480 @@
+﻿@model IEnumerable<MusicStoreAPI.Models.CMS.WebHeaders>
+
+@{
+    ViewData["Title"] = "Navigation";
+}
+
+<style>
+    .dropdown:hover + .dropdown-menu {
+        display: block;
+    }
+</style>
+
+     @foreach (var item in Model)
+    {
+    <li class="dropdown">
+
+            <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="@item.Name" target="_self">
+                @if (item.Position == 1)
+                {
+                    <span class="label_menu" style="background-color: #ef1d1d">HOT</span>
+                }
+                <span class="menu-title">@item.Descriptions</span><b class="caret"></b>
+            </a>
+
+            <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style="width:1000px;">
+                <div class="dropdown-menu-inner">
+                    <div class="row">
+                        <div class="mega-col col-sm-8">
+                            <div class="row">
+                                @foreach (var header in item.ProductCategories)
+                                {
+                                    <div class="col-sm-6">
+                                        <div class="mega-col-inner">
+                                            <div class="menu-title">
+                                                <a href="/collections" title="@header.Name">
+                                                    @header.Name
+                                                </a>
+                                            </div>
+                                        @foreach (var product in header.ProductSubCategories)
+                                        {
+                                            <div class="widget-inner">
+                                                <ul class="nav-links">
+                                                        <li>
+                                                            <a href="" title="@product.Name">
+                                                                <span>@product.Name</span>
+                                                            </a>
+                                                        </li>
+                                                </ul>
+                                            </div>
+                                        }
+                                        </div>
+                                    </div>
+                                }
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+    }
+ 
+
+
+@* <li class="parent dropdown aligned-center ">
+
+    @foreach (var item in Model)
+    {
+        if (item.Position == 1)
+        {
+             <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="@item.Name" target="_self"> 
+ 
+
+            <span class="label_menu" style="background-color: #ef1d1d">HOT</span>
+
+                <span class="menu-title">@item.Name</span><b class="caret"></b>
+    </a>   *@      
+
+   @*          <a href="~/Home/TopPanel" class="book-a-table-btn scrollto d-none d-lg-flex">
+                Guitar
+            </a> *@
+            @* @Html.Raw(item.WebSiteContent) *@
+
+        @* } *@
+@*     } *@
+@*     <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style='width:1000px;'>
+        <div class="dropdown-menu-inner">
+            <div class="row">
+
+                <div class="mega-col col-sm-8">
+
+                    <div class="row">
+
+                        <div class="col-sm-6">
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections" title="Collection">
+                                        Electric Guitars
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links"> *@
+@*                                             @foreach (var item in Model)
+                                            {
+                                            <li>
+                                        // tutaj celujemy -> ??????
+                                        <li>@Html.ActionLink(item.LinkTytul, "Index", "Home", new {id=item.IdStrony}, null) </li>
+
+
+                                        <a href="/collections/frontpage/?preview_theme_id=155310149" title="Solid Body Guitars">
+                                                    <span>Solid Body</span>
+                                                    // nawigacja do konkretnej sekcji
+                                                </a>
+                                            </li> *@
+                                          @*   }
+
+                                        <li>
+                                            <a href="/collections/frontpage/?preview_theme_id=155310149" title="Solid Body Guitars">
+                                                <span>Solid Body</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/collections/violin-collections/?preview_theme_id=156177029" title="Hollow Body Guitars">
+
+                                                <span>Hollow Body</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Lefthanded Electric">
+
+                                                <span>Lefthanded Electric Guitar</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Acustic Guitars">
+                                        Clasical Guitars
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Clasical">
+                                                <span>Clasical Guitars</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Electro-Clasical">
+
+                                                <span>Electro-Clasical Guitars</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Acustic Guitars">
+                                        Acustic Guitars
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="custic">
+                                                <span>Acustic Guitars</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Electro-Acustic">
+
+                                                <span>Electro-Acustic Guitars</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Bass">
+                                        Bass Guitars
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Fretless Bass">
+
+                                                <span>Fretless Bass</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="HollowBody Bass">
+
+                                                <span>HollowBody Bass</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Acustic Bass">
+
+                                                <span>Acustic Bass</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Lefthanded Bass">
+
+                                                <span>Lefthanded Bass</span>
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Other Guitars">
+                                        Other Guitars
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Banjo">
+
+                                                <span>Banjo</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Ukulele">
+
+                                                <span>Ukulele</span>
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div> *@
+
+                <!-- First drop down  - tutaj maja byc obrazki / produkty najbardziej sprzedawane lub oferta a nie na sztywno-->
+
+              @*   <div class="mega-col col-sm-4">
+
+                    <div class="products_menu">
+
+                        <div class="menu-title">
+                            Best seller
+                        </div>
+
+                        <div class="product-block">
+
+
+                            <div class="product-container clearfix">
+                                <div class="image ">
+                                    <a class="product_img_link" href="/products/bass-guitar" title="Bass Guitar">
+                                        <img class="replace-2x img-responsive" src="//ap-melody.myshopify.com/cdn/shop/products/p1_large.jpg" alt="Bass Guitar">
+                                    </a>
+                                </div>
+                                <div class="product-meta">
+                                    <h5 class="name">
+                                        <a class="product-name" href="/products/bass-guitar" title="Bass Guitar">
+                                            Bass Guitar
+                                        </a>
+                                    </h5>
+                                    <div class="product-desc">
+                                    </div>
+                                    <div class="content_price">
+
+                                        <span class="price product-price">
+                                            <span class='money'>$30.00</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="product-container clearfix">
+                                <div class="image ">
+                                    <a class="product_img_link" href="/products/guitar-gd-2" title="Guitar GD 2">
+                                        <img class="replace-2x img-responsive" src="//ap-melody.myshopify.com/cdn/shop/products/p8_9b097ef7-2e66-4d08-9f70-bfbf6e01ef81_large.jpg" alt="Guitar GD 2">
+                                    </a>
+                                </div>
+                                <div class="product-meta">
+                                    <h5 class="name">
+                                        <a class="product-name" href="/products/guitar-gd-2" title="Guitar GD 2">
+                                            Guitar GD 2
+                                        </a>
+                                    </h5>
+                                    <div class="product-desc">
+
+
+                                        he brand offers feminine designs delivering stylish separates and...
+
+                                    </div>
+                                    <div class="content_price">
+
+                                        <span class="price product-price">
+                                            <span class='money'>$22.00</span>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div> *@
+                <!-- Best sellers section--></>
+
+@* 
+
+            </div>
+        </div>
+    </div>
+</li>
+
+ *@
+
+<!-- GUITAR EQ-->
+@* 
+<li class="parent dropdown aligned-center ">
+    <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="Guitar Equipment" target="_self">
+
+
+        <span class="menu-title">Guitar Equipment</span><b class="caret"></b>
+    </a>
+
+    <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style='width:1000px;'>
+        <div class="dropdown-menu-inner">
+            <div class="row">
+
+                <div class="mega-col col-sm-8">
+
+                    <div class="row">
+
+
+                        <div class="col-sm-6">
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections" title="Amplifiers">
+                                        Amplifiers
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="/collections/frontpage/?preview_theme_id=155310149" title="Electric Amps">
+
+                                                <span>Electric Amps</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/collections/violin-collections/?preview_theme_id=156177029" title="Acustic Amps">
+
+                                                <span>Acustic Amps</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Bass Amps">
+
+                                                <span>Bass Amps</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Packs">
+                                        Packs
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Electro Pack">
+                                                <span>Electric Packs</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Acustic Pack">
+
+                                                <span>Acustic Packs</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Bass Pack">
+
+                                                <span>Bass Packs</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6">
+
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Cases and Bags">
+                                        Cases and Bags
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Gigbags">
+
+                                                <span>Gigbags</span>
+
+                                            </a>
+                                        </li>  
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Hard cases">
+
+                                                <span>Hard cases</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Flight cases">
+
+                                                <span>Flight cases</span>
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Guitar Accessories">
+                                        Guitar Accessories
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Guitar MaintenanceBanjo">
+
+                                                <span>Guitar Maintenance</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Straps">
+
+                                                <span>Straps</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Tuners">
+
+                                                <span>Tuners</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Stands & Hangers">
+
+                                                <span>Stands & Hangers</span>
+
+                                            </a>
+                                        </li>
+
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+                <!-- First drop down -->
+
+                <div class="mega-col col-sm-4">
+
+                    <div class="products_menu">
+
+                        <div class="menu-title">
+                            <a href="/collections/all" title="Strings">
+                                Strings
+                            </a>
+                        </div>
+                        <div class="widget-inner">
+                            <ul class="nav-links">
+
+
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Electric Strings">
+
+                                        <span>Electric Strings</span>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Acustic Strings">
+
+                                        <span>Acustic Strings</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Nylon Strings">
+
+                                        <span>Nulon Strings</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Stands & Hangers">
+
+                                        <span>Bass Strings</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Traditional Strings">
+
+                                        <span>Traditional Strings</span>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</li>
+
+
+<!-- next column - Drums section -->
+<li class="parent dropdown aligned-center ">
+    <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="Other Instruments" target="_self">
+
+
+        <span class="menu-title">Drums</span><b class="caret"></b>
+    </a>
+
+    <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style='width:1000px;'>
+        <div class="dropdown-menu-inner">
+            <div class="row">
+
+                <div class="mega-col col-sm-8">
+
+                    <div class="row">
+
+
+                        <div class="col-sm-6">
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections" title="Electronic Drums">
+                                        Electronic Drums
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="/collections/frontpage/?preview_theme_id=155310149" title="Beginner Drums">
+
+                                                <span>Beginner Drums</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/collections/violin-collections/?preview_theme_id=156177029" title="Intermediate Drums">
+
+                                                <span>Intermediate Drums</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Professional Drums">
+
+                                                <span>Professional Drums</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Packs">
+
+                                                <span>Packs</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Acustic Drums">
+                                        Acustic Drums
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Beginner Drums">
+                                                <span>Beginner Drums</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Complete Drums">
+
+                                                <span>Complete Drums</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Packages">
+
+                                                <span>Packages</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Shell Packs">
+
+                                                <span>Shell Packs</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Portable Drums">
+
+                                                <span>Portable Drums</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Junior Drums">
+
+                                                <span>Junior Drums</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Practice Kits">
+
+                                                <span>Practice Kits</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Clearance">
+
+                                                <span>Clearance</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Cymbals">
+                                        Cymbals
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Hi-Hats">
+                                                <span>Hi-Hats</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Crash">
+
+                                                <span>Crash</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Ride">
+
+                                                <span>Ride</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="China">
+
+                                                <span>China</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Splash">
+
+                                                <span>Splash</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Effects">
+
+                                                <span>Effects</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Low Volume">
+
+                                                <span>Low Volume</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="menu-title">
+                            <a href="/collections/all" title="Drum Hardware">
+                                Drum Hardware
+                            </a>
+                        </div>
+                        <div class="widget-inner">
+                            <ul class="nav-links">
+
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Drum Stools">
+
+                                        <span>Drum Stools</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Kick Pedals">
+
+                                        <span>Kick Pedals</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Cymbal Stands">
+
+                                        <span>Cymbal Stands</span>
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Hi-Hat Stands">
+
+                                        <span>Hi-Hat Stands</span>
+
+
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Snare Stands">
+
+                                        <span>Snare Stands</span>
+
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Hardware Sets">
+
+                                        <span>Hardware Sets</span>
+
+                                    </a>
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="menu-title">
+                    <a href="/collections/all" title="Percussion">
+                        Percussion
+                    </a>
+                </div>
+                <div class="widget-inner">
+                    <ul class="nav-links">
+
+
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Cajons">
+
+                                <span>Cajons</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Frame Drums">
+
+                                <span>Frame Drums</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="World">
+
+                                <span>World</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Hand">
+
+                                <span>Hand</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Tuned">
+
+                                <span>Tuned</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Sound Therapy">
+
+                                <span>Sound Therapy</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Marching">
+
+                                <span>Marching</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- next column - Drums section -->
+<li class="parent dropdown aligned-center ">
+    <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="Orchestral" target="_self">
+
+
+        <span class="menu-title">Orchestral</span><b class="caret"></b>
+    </a>
+
+    <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style='width:1000px;'>
+        <div class="dropdown-menu-inner">
+            <div class="row">
+
+                <div class="mega-col col-sm-8">
+
+                    <div class="row">
+
+
+                        <div class="col-sm-6">
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections" title="Strings">
+                                        Strings
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="/collections/frontpage/?preview_theme_id=155310149" title="Violins">
+
+                                                <span>Violins</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/collections/violin-collections/?preview_theme_id=156177029" title="Violas">
+
+                                                <span>Violas</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Cellos">
+
+                                                <span>Cellos</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Double Basses">
+
+                                                <span>Double Basses</span>
+
+                                            </a>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Harps">
+
+                                                <span>Harps</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Woodwind">
+                                        Woodwind
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Saxophones">
+                                                <span>Saxophones</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Clarinets">
+
+                                                <span>Clarinets</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Flutes">
+
+                                                <span>Flutes</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Recorders">
+
+                                                <span>Recorders</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Brass Instruments">
+                                        Brass Instruments
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Cornets               ">
+                                                <span>Cornets</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Trumpets">
+
+                                                <span>Trumpets</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Trombones">
+
+                                                <span>Trombones</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-title">
+                                <a href="/collections/all" title="Percussion">
+                                    Percussion
+                                </a>
+                            </div>
+                            <div class="widget-inner">
+                                <ul class="nav-links">
+
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Xylophones">
+
+                                            <span>Xylophones</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Gongs">
+
+                                            <span>Gongs</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Tambourines">
+
+                                            <span>Tambourines</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Cymbals">
+
+                                            <span>Cymbals</span>
+
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- next column - Drums section -->
+<li class="parent dropdown aligned-center ">
+    <a class="dropdown-toggle has-category" data-toggle="dropdown" href="/collections/all" title="Studio" target="_self">
+
+
+        <span class="menu-title">Studio</span><b class="caret"></b>
+    </a>
+
+    <div class="dropdown-sub dropdown-menu sub-apmegamenu-1" style='width:1000px;'>
+        <div class="dropdown-menu-inner">
+            <div class="row">
+
+                <div class="mega-col col-sm-8">
+
+                    <div class="row">
+
+
+                        <div class="col-sm-6">
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections" title="Audio Interfaces">
+                                        Audio Interfaces
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="/collections/frontpage/?preview_theme_id=155310149" title="USB">
+
+                                                <span>USB</span>
+
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="/collections/violin-collections/?preview_theme_id=156177029" title="Thunderbolt">
+
+                                                <span>Thunderbolt</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="Firewire">
+
+                                                <span>Firewire</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="iPhone, iPad">
+
+                                                <span>iPhone, iPad</span>
+
+                                            </a>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156178117" title="MIDI">
+
+                                                <span>MIDI</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Monitors">
+                                        Monitors
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="SubZero">
+                                                <span>SubZero</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Yamaha">
+
+                                                <span>Yamaha</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="KRK">
+
+                                                <span>KRK</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="ADAM">
+
+                                                <span>ADAM</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Genelec">
+
+                                                <span>Genelec</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+
+                            <div class="mega-col-inner ">
+                                <div class="menu-title">
+                                    <a href="/collections/all" title="Microphones">
+                                        Microphones
+                                    </a>
+                                </div>
+                                <div class="widget-inner">
+                                    <ul class="nav-links">
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Condenser               ">
+                                                <span>Condenser</span>
+                                            </a>
+                                        </li>
+
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Dynamic">
+
+                                                <span>Dynamic</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="USB">
+
+                                                <span>USB</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Tube">
+
+                                                <span>Tube</span>
+
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Ribbon">
+
+                                                <span>Ribbon</span>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+
+
+                            <div class="menu-title">
+                                <a href="/collections/all" title="Mixers">
+                                    Mixers
+                                </a>
+                            </div>
+                            <div class="widget-inner">
+                                <ul class="nav-links">
+
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="SubZero">
+
+                                            <span>SubZero</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Yamaha">
+
+                                            <span>Yamaha</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Allen & Heath">
+
+                                            <span>Allen & Heath</span>
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="SoundCraft">
+
+                                            <span>SoundCraft</span>
+
+
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Mackie">
+
+                                            <span>Mackie</span>
+
+
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-title">
+                    <a href="/collections/all" title="Synthesizers">
+                        Synthesizers
+                    </a>
+                </div>
+                <div class="widget-inner">
+                    <ul class="nav-links">
+
+
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=155310149" title="Analog Synthesizers">
+
+                                <span>Analog Synthesizers</span>
+
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Digital Synthesizers">
+
+                                <span>Digital Synthesizers</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Modular Synth">
+
+                                <span>Modular Synth</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Samplers">
+
+                                <span>Samplers</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Sequencers">
+
+                                <span>Sequencers</span>
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="menu-title">
+                    <a href="/collections/all" title="Headphones">
+                        Headphones
+                    </a>
+                </div>
+                <div class="widget-inner">
+                    <ul class="nav-links">
+
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="AKG">
+
+                                <span>AKG</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="BayerDynamic">
+
+                                <span>BayerDynamic</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Sennheiser">
+
+                                <span>Sennheiser</span>
+
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://ap-melody.myshopify.com/products/guitar-gig-1/?preview_theme_id=156177989" title="Roland">
+
+                                <span>Roland</span>
+
+
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<li class="parent dropdown ">
+    <a class="dropdown-toggle has-category" data-toggle="dropdown" href="#" title="Page" target="_self">
+
+        <span class="menu-title">Page</span><b class="caret"></b>
+    </a>
+    <div class="dropdown-menu level1">
+        <div class="dropdown-menu-inner">
+            <div class="mega-col-inner">
+                <ul>
+
+
+                    <li class="">
+                        <a class="" href="/account" title="Account">
+                            <span class="">Account</span>
+
+                        </a>
+                    </li>
+
+                    <li class="parent dropdown-submenu active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="/" title="Footer">
+                            <span class="">About Us</span>
+
+                            <b class="caret"></b>
+                        </a>
+                        <div class="dropdown-menu level2">
+                            <div class="dropdown-menu-inner">
+                                <div class="mega-col-inner">
+                                    <ul>
+
+
+                                        <li class="">
+                                            <a class="" href="/search" title="Specials">
+                                                <span class="">Contact Us</span>
+
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="">
+                                            <a class="" href="/pages/contact" title="Contact Us">
+                                                <span class="">Music Blogs</span>
+
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="active">
+                                            <a class="" href="/" title="Legal Notice">
+                                                <span class="">Guitar Lessons</span>
+
+                                            </a>
+                                        </li>
+
+
+
+                                        <li class="active">
+                                            <a class="" href="/" title="Secure Payment">
+                                                <span class="">Secure Payment</span>
+
+                                            </a>
+                                        </li>
+
+
+                                        <li class="">
+                                            <a class="" href="/pages/404" title="About Us">
+                                                <span class="">About Us</span><!-- Galery--></>
+
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="/pages/404" title="About Us">
+                                                <span class="">Our Team</span><!-- our workers--></>
+
+                                            </a>
+                                        </li>
+                                        <li class="">
+                                            <a class="" href="/pages/404" title="About Us">
+                                                <span class="">Gift Cards</span><!-- our workers--></>
+
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                                *@

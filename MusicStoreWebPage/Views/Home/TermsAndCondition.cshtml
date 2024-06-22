@@ -1,0 +1,58 @@
+﻿@model IEnumerable<MusicStoreAPI.Models.CMS.TermsAndCondition>
+
+
+@{
+    ViewData["Title"] = "Terms & Conditions";
+}
+
+<div class="page-container" id="PageContainer">
+
+    <main class="main-content" id="MainContent">
+
+        <section id="columns" class="columns-container">
+            <div class="container">
+                <div class="row">
+                    <section id="center_column" class="col-sm-12 col-md-12">
+                        <div class="page-wrap">
+
+                            @foreach (var item in Model)
+                            {
+                                if (item.Position == 1)
+                                {
+                                    <h1 class="page-header bottom-indent">@item.Name</h1>
+
+                                }
+                            }
+                            <h1 class="page-header bottom-indent">Terms & Conditions</h1>
+                            <div class="page-content">
+                                <div class="rte">
+                                    @foreach (var item in Model)
+                                    {
+                                        if (item.Position == 1)
+                                        {
+                                            <p>@item.Descriptions</p>
+                                        }
+                                    }
+                                    <div class="row">
+                                        <div class="col-md-6 col-sm-12 col-xs-12">
+                                            @foreach (var item in Model)
+                                            {
+                                                if (item.Position != 1)
+                                                {
+                                                    <h4>@item.Name</h4>
+                                                    <p>@item.Descriptions</p>
+                                                }
+                                            }
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>

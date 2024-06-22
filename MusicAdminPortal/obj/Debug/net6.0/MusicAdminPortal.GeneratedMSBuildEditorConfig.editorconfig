@@ -1,0 +1,105 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = MusicAdminPortal
+build_property.RootNamespace = MusicAdminPortal
+build_property.ProjectDir = C:\Users\Gajdzio\OneDrive\Documents\PracaDyplomowa2023\API\MusicAdminPortal\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\Gajdzio\OneDrive\Documents\PracaDyplomowa2023\API\MusicAdminPortal
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/MusicStoreAddress/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNTdG9yZUFkZHJlc3NcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/MusicStoreAddress/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNTdG9yZUFkZHJlc3NcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/MusicStoreAddress/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNTdG9yZUFkZHJlc3NcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/MusicStoreAddress/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNTdG9yZUFkZHJlc3NcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/MusicStoreAddress/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTXVzaWNTdG9yZUFkZHJlc3NcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/TermsAndCondition/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybXNBbmRDb25kaXRpb25cQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/TermsAndCondition/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybXNBbmRDb25kaXRpb25cRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/TermsAndCondition/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybXNBbmRDb25kaXRpb25cRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/TermsAndCondition/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybXNBbmRDb25kaXRpb25cRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/TermsAndCondition/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVybXNBbmRDb25kaXRpb25cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/WebHeader/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2ViSGVhZGVyXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/WebHeader/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2ViSGVhZGVyXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/WebHeader/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2ViSGVhZGVyXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/WebHeader/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2ViSGVhZGVyXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/WebHeader/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcV2ViSGVhZGVyXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Gajdzio/OneDrive/Documents/PracaDyplomowa2023/API/MusicAdminPortal/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-492xribe2v

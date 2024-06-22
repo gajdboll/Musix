@@ -1,0 +1,113 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\MusicStoreWebPage.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MusicStoreWebPage.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\png\\kapma.png",
+      "PackagePath": "staticwebassets\\png\\kapma.png"
+    },
+    {
+      "Id": "C:\\Users\\Gajdzio\\OneDrive\\Documents\\PracaDyplomowa2023\\API\\MusicStoreWebPage\\wwwroot\\png\\logo3.png",
+      "PackagePath": "staticwebassets\\png\\logo3.png"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.MusicStoreWebPage.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.build.MusicStoreWebPage.props",
+      "PackagePath": "build\\MusicStoreWebPage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildMultiTargeting.MusicStoreWebPage.props",
+      "PackagePath": "buildMultiTargeting\\MusicStoreWebPage.props"
+    },
+    {
+      "Id": "obj\\Debug\\net6.0\\staticwebassets\\msbuild.buildTransitive.MusicStoreWebPage.props",
+      "PackagePath": "buildTransitive\\MusicStoreWebPage.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

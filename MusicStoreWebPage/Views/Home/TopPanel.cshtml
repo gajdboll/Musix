@@ -1,0 +1,42 @@
+﻿@model IEnumerable<MusicStoreAPI.Models.CMS.Managment>
+
+
+@{
+    ViewData["Title"] = "Top Managment Panel";
+}
+
+<div class="header_user_info popup-over e-scale">
+    <div data-toggle="dropdown" class="popup-title dropdown-toggle" title="Account">
+        <span>Account</span><i class="fa fa-caret-down"></i>
+    </div>
+    <ul class="links dropdown-menu list-unstyled">
+
+        @foreach (var item in   Model)
+        {
+            <li>
+                @*<li>@Html.ActionLink(item.ManagmentLink, "Index", "Home", new {id=item.IdStrony}, null) </li>*@
+
+                <a id="customer_login_link" href="~/Home/@item.ManagmentLink" title="@item.Name"><i class="@item.ManagmentIcon"></i> @item.Name</a>
+
+            </li>
+        }
+       @* <li>
+            <a id="customer_login_link" href="/account/login" title="Login"><i class="fa fa-unlock-alt"></i> Login</a>
+        </li>
+        <li>
+            <a id="customer_register_link" href="/account/register" title="Register"><i class="fa fa-edit"></i> Register</a>
+        </li>
+
+        <li>
+            <a class="account" rel="nofollow" href="/account" title="My Account"><i class="fa fa-user"></i> My Account</a>
+        </li>
+
+        <li>
+            <a id="wishlist-total" title="Wishlist" href="/pages/wishlist"><i class="fa fa-list-alt"></i> Wishlist</a>
+        </li>
+
+        <li>
+            <a href="/cart" title="Check Out"><i class="fa fa-share"></i> Check Out</a>
+        </li>*@
+    </ul>
+</div>

@@ -1,0 +1,25 @@
+﻿@model IEnumerable<MusicStoreAPI.Models.CMS.Managment>
+
+
+@{
+    ViewData["Title"] = "Top Managment Panel";
+}
+
+<div class="header_user_info popup-over e-scale">
+    <div data-toggle="dropdown" class="popup-title dropdown-toggle" title="Account">
+        <span>Account</span><i class="fa fa-caret-down"></i>
+    </div>
+    <ul class="links dropdown-menu list-unstyled">
+
+        @foreach (var item in   Model)
+        {
+            <li>
+                @*<li>@Html.ActionLink(item.ManagmentLink, "Index", "Home", new {id=item.IdStrony}, null) </li>*@
+
+                <a id="customer_login_link" href="~/Home/@item.ManagmentLink" title="@item.Name"><i class="@item.ManagmentIcon"></i> @item.Name</a>
+
+            </li>
+        }
+
+    </ul>
+</div>
